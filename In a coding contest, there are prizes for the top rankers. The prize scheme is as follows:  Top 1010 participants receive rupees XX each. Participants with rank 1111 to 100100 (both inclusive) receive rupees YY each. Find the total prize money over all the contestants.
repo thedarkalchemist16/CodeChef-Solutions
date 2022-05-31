@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int PrizeMoney=0;
+    int x=0 , y=0;
+    int i=0;
+    
+    cout<<"Enter PrizeMoney for top 10 contestants: ";
+    cin>>x;
+    for( i=1;i<10;i++){
+        PrizeMoney=PrizeMoney+x;
+    }
+    
+    cout<<"Enter PrizeMoney for top 100 contestants: ";
+    cin>>y;
+    
+    for(i=11;i<=100;i++){
+        PrizeMoney=PrizeMoney+y;
+    }
+
+cout<<PrizeMoney;
+	// your code goes here
+	return 0;
+}
