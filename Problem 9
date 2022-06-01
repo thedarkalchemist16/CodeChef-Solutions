@@ -1,0 +1,38 @@
+Team RCB has earned XX points in the games it has played so far in this year's IPL. To qualify for the playoffs they must earn at least a total of YY points. They currently have ZZ games left, in each game they earn 22 points for a win, 11 point for a draw, and no points for a loss.
+
+Is it possible for RCB to qualify for the playoffs this year?
+
+Input Format
+First line will contain TT, number of testcases. Then the testcases follow.
+Each testcase contains of a single line of input, three integers X , Y, ZX,Y,Z.
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	
+	int t;
+	cin>>t;
+	while(t--){
+	    
+	       
+	    int x, y, z;
+	    cin >> x >> y >> z;
+	    
+	    y -= x;
+	    
+	    if(2 * z >= y) cout << "yes\n";
+	    else cout << "no\n";
+	}
+	    
+	    
+	    
+	    
+	
+	return 0;
+}
