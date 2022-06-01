@@ -1,0 +1,60 @@
+Chef is taking a tough examination. The question paper consists of NN objective problems and each problem has 44 options A, B, C,A,B,C, and DD, out of which, exactly one option is correct.
+
+Since Chef did not study for the exam, he does not know the answer to any of the problems. Chef was looking nearby for help when his friend somehow communicated the following information:
+
+Exactly N_AN 
+A
+​
+  problems have option AA as the answer.
+Exactly N_BN 
+B
+​
+  problems have option BB as the answer.
+Exactly N_CN 
+C
+​
+  problems have option CC as the answer.
+Exactly N_DN 
+D
+​
+  problems have option DD as the answer.
+Note that:
+
+N_A + N_B + N_C + N_D = NN 
+A
+​
+ +N 
+B
+​
+ +N 
+C
+​
+ +N 
+D
+​
+ =N.
+Each problem is worth exactly 11 mark and there is no negative marking.
+Even though Chef knows the number of correct options of each type, he does not know the correct answer to any problem.
+Based on the given information, find the maximum marks Chef can guarantee if he marks the answers optimally.
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int T;
+    cin>>T;
+    while(T--){
+        
+        int N, n1,n2,n3,n4,X;
+        cin>>N;
+        cin>>n1>>n2>>n3>>n4;
+        
+        X=max(n1,max(n2,max(n3,n4)));
+        cout<<X<<endl;
+    }
+	// your code goes here
+	return 0;
+}
