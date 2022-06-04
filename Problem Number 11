@@ -1,0 +1,27 @@
+Chef has XX 5 rupee coins and YY 10 rupee coins. Chef goes to a shop to buy chocolates for Chefina where each chocolate costs ZZ rupees. Find the maximum number of chocolates that Chef can buy for Chefina.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	
+	for(int i=0;i<t;i++){
+	    
+	    int x,y,z,money,noOfChoc;
+	    
+	    cin>>x>>y>>z;
+	    
+	    money=5*x+10*y;
+	    
+	    noOfChoc=money/z;
+	   
+	    
+	    cout<<noOfChoc<<endl;
+	    
+	    
+	}// your code goes here
+	return 0;
+}
