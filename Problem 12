@@ -1,0 +1,39 @@
+Chef has 22 numbers AA and BB (A \lt B)(A<B).
+
+Chef will perform some operations on AA.
+
+In the i^{th}i 
+th
+  operation:
+
+Chef will add 11 to AA if ii is odd.
+Chef will add 22 to AA if ii is even.
+Chef can stop at any instant. Can Chef make AA equal to BB?
+
+#include <iostream>
+using namespace std;
+
+int main() {
+   int t;
+   cin>>t;
+   while(t--){
+       int a,b;
+       cin>>a>>b;
+      if((b-(a+2))%3==0)
+        cout<<"NO"<<endl;
+    else
+        cout<<"YES"<<endl;
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   }
+
+	return 0;
+}
