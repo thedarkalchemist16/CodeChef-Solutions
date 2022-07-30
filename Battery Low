@@ -1,0 +1,21 @@
+Chef's phone shows a Battery Low notification if the battery level is 15 \%15% or less.
+
+Given that the battery level of Chef's phone is X \%X%, determine whether it would show a Battery low notification.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+for(int i=0;i<t;i++)
+{
+    int x;
+    cin>>x;
+    if(x<=15)
+    cout<<"yes"<<endl;
+    else
+    cout<<"no"<<endl;
+}
+}
