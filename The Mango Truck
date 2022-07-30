@@ -1,0 +1,31 @@
+You are given that a mango weighs XX kilograms and a truck weighs YY kilograms. You want to cross a bridge that can withstand a weight of ZZ kilograms.
+
+Find the maximum number of mangoes you can load in the truck so that you can cross the bridge safely.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    for(int i=0;i<t;i++)
+    {
+        int x,y,z;
+        cin>>x;
+        cin>>y;
+        cin>>z;
+        int number;
+        
+        for(number=0;number<100;number++)
+        {
+            if(number*x+y>z)
+            {
+            cout<<--number<<endl;;
+            break;}
+        }
+        
+    }
+	// your code goes here
+	return 0;
+}
