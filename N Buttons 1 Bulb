@@ -1,0 +1,44 @@
+Kulyash stays in room that has a single bulb and NN buttons. The bulb is initially on.
+
+The initial states of the buttons are stored in a binary string SS of length NN — if S_iS 
+i
+​
+  is 00, the ii-th button is off, and if S_iS 
+i
+​
+  is 11, the ii-th button is on. If Kulyash toggles any single button then the state of the bulb reverses i.e. the bulb lights up if it was off and vice versa.
+
+Kulyash has toggled some buttons and the final states of the buttons are stored in another binary string RR of length NN. He asks you to determine the final state of the bulb.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	for(int i=0;i<t;i++)
+	{
+	    int n;
+	    int s[n];
+	    int r[n];
+	    int z=0;
+	    cin>>n;
+	    for(int j=0;j<n;j++)
+	    cin>>s[j];
+	    for(int m=0;m<n;m++)
+	    cin>>r[m];
+	    
+	    for(int p=0;p<n;p++)
+	    {
+	        if(s[p]!=r[p])
+	        z++;
+	    }
+	    
+	    if(z%2==0)
+	    cout<<0<<endl;
+	    else 
+	    cout<<1<<endl;
+	}
+	return 0;
+}
