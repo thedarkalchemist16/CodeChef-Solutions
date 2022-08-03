@@ -1,0 +1,27 @@
+Bob and Alice are having a lockout match between them. There are three problems in the contest worth AA, BB, and CC points respectively. Only the first player to solve a problem gets points for that problem. It is impossible for Bob and Alice to solve a problem at the same time. Chef wants to know if there is any chance of a draw if Bob and Alice manage to solve all 33 problems. A draw occurs when both players end with equal number of points.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	for(int i=0;i<t;i++)
+	{
+	    int x,y,z;
+	    cin>>x;
+	    cin>>y;
+	    cin>>z;
+	    if(x+y==z)
+	    cout<<"yes"<<endl;
+	    else if(y+z==x)
+	    cout<<"yes"<<endl;
+	    else if(z+x==y)
+	    cout<<"yes"<<endl;
+	    else
+	    cout<<"no"<<endl;
+	}
+	return 0;
+}
+
